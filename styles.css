@@ -43,6 +43,13 @@ body {
     text-align: justify;
 }
 
+#search-input {
+    background-color: #fff;
+    position: relative;
+    left: 10px;
+    top: 10px;
+}
+
 .tangerine-tab-content--text-pad h1{
   margin: 0 0 25px 0;
 }
