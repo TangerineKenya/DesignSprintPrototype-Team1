@@ -45,7 +45,7 @@
   <body>
     <div class="site mdl-layout mdl-js-layout">
 
-      <div class="tangerine-header mdl-layout__header mdl-layout__header--waterfall">
+      <div class="tangerine-header mdl-layout__header">
 
         <div class="mdl-layout__header-row tangerine-header-row">
           <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
@@ -58,27 +58,48 @@
           <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
             <i class="material-icons">more_vert</i>
           </button>
-          
-        </div>
-        <div class="tangerine-header--bar">
-          <div class="tangerine--timer">
-            <img src="assets/ic_clock.png"> 00:45:23  
-          </div>
-          <div class="tangerine--bar-buttons">
-            <img src="assets/ic_mic.png">  
-            <img src="assets/ic_camera.png">  
-            <img src="assets/ic_video.png">  
-            <img src="assets/ic_bookmark.png">  
         </div>
 
+        <div class="tangerine-header--bar">
+
+          <div class="mdl-grid">
+
+            <div class="mdl-cell mdl-cell--1-col">
+              <img src="assets/ic_clock.png">
+            </div>
+
+            <div class="mdl-cell mdl-cell--2-col tangerine--timer">
+              00:45:23
+            </div>
+
+            <div class="mdl-cell mdl-cell--1-col">
+            </div>
+
+            <div class="mdl-cell mdl-cell--1-col tangerine-header--bar--button">
+                <img src="assets/ic_mic.png">
+                Audio
+            </div>
+
+            <div class="mdl-cell mdl-cell--1-col tangerine-header--bar--button">
+              <img src="assets/ic_camera.png">
+              Photo
+            </div>
+
+            <div class="mdl-cell mdl-cell--1-col tangerine-header--bar--button">
+              <img src="assets/ic_video.png">
+              Photo
+            </div>
+
+            <div class="mdl-cell mdl-cell--1-col tangerine-header--bar--button">
+              <img src="assets/ic_bookmark.png">
+              Photo
+            </div>
+
+          </div>
+
+        </div>
 
       </div>
-
-        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
-          <li class="mdl-menu__item">Home</li>
-          <li class="mdl-menu__item">Settings</li>
-          <li class="mdl-menu__item">Logout</li>
-        </ul>
 
       <div class="android-content mdl-layout__content">
 
@@ -218,10 +239,10 @@
           </div>
         </div>
 
-        
+
       </div>
       <footer class="tangerine-footer mdl-mini-footer">
-            
+
       </footer>
       <div class="mdl-layout__obfuscator">
     </div>
