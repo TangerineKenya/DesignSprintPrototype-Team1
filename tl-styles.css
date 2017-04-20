@@ -60,8 +60,10 @@
   Timer component
   */
 .timer {
+  padding-top: 2px;
   border-right: solid #EEE 1px;
-  color: #CCC;
+  color: #AAA;
+  font-size: 1.3em;
 }
 
 /*
