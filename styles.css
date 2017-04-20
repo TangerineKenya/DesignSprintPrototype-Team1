@@ -36,3 +36,38 @@ body {
 .tangerine-tab-bar {
   justify-content: left;
 }
+
+.tangerine-tab-content--text-pad{
+    padding: 25px;
+    /* padding-right: 4.7rem; */
+    text-align: justify;
+}
+
+.tangerine-tab-content--text-pad h1{
+  margin: 0 0 25px 0;
+}
+
+.tangerine-card-full-width {
+  width: 100%;
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
+    color: #EF6433;
+}
+
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active::after {
+    background-color: #EF6433 !important;
+}
+
+.mdl-tabs__tab{
+    color: #EF6433;
+}
+
+.mdl-layout__tab-bar-button, .mdl-layout__tab-bar{
+    background-color: #fff;
+    /*color: #EF6433;*/
+}
+
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active, .mdl-layout__tab{
+    color: #EF6433;
+}
