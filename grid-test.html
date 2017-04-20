@@ -1,0 +1,161 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Android</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="mdl/material.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tl-styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+
+    <!---
+      --
+      OVERLAYS
+      --
+    -->
+
+    <div style="display:none" class="audio-overlay tangerine-overlay">
+      <img width="100%" src="assets/audio.png" >
+    </div>
+
+    <div style="display:none" class="camera-overlay tangerine-overlay">
+      <img width="100%" src="assets/camera.jpg" >
+    </div>
+
+    <div style="display:none" class="video-overlay tangerine-overlay">
+      <img width="100%" src="assets/camera.jpg" >
+    </div>
+
+    <div style="display:none" class="bookmark-overlay tangerine-overlay">
+      <img width="100%" src="assets/bookmark.jpg" >
+    </div>
+
+
+    <!---
+      --
+      Layout
+      --
+    -->
+
+    <div class="site mdl-layout mdl-js-layout">
+
+      <!---
+        --
+        Header
+        --
+      -->
+
+      <div class="tangerine-header mdl-layout__header">
+
+        <div class="mdl-layout__header-row tangerine-header-row">
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <img class="tangerine-logo-image" src="images/tangerineLogo.png" height="32px">
+          </button>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+
+          <!-- Right aligned menu below button -->
+          <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+            <i class="material-icons">more_vert</i>
+          </button>
+        </div>
+
+        <div class="tangerine-header--bar">
+
+          <div class="mdl-grid">
+
+            <div class="mdl-cell mdl-cell--1-col">
+              <img src="assets/ic_clock.png">
+            </div>
+
+            <div class="mdl-cell mdl-cell--2-col tangerine--timer">
+              00:45:23
+            </div>
+
+            <div class="mdl-cell mdl-cell--1-col">
+            </div>
+
+            <div class="mdl-cell mdl-cell--1-col tangerine-header--bar--button audio-button">
+                <img src="assets/ic_mic.png">
+                Audio
+            </div>
+
+            <div class="mdl-cell mdl-cell--1-col tangerine-header--bar--button camera-button">
+              <img src="assets/ic_camera.png">
+              Photo
+            </div>
+
+            <div class="mdl-cell mdl-cell--1-col tangerine-header--bar--button video-button">
+              <img src="assets/ic_video.png">
+              Video
+            </div>
+
+            <div class="mdl-cell mdl-cell--1-col tangerine-header--bar--button bookmark-button">
+              <img src="assets/ic_bookmark.png">
+              Mark
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="android-content mdl-layout__content">
+
+        <!-- Wide card with share menu button -->
+        <style>
+        </style>
+
+        <img src="/assets/grid-test.png" width="100%">
+        <a href="feedback.html"><img src="/assets/grid-test-bar.png" width="100%" style="position:absolute; bottom: 0px"></a>
+
+
+
+      </div>
+      <footer class="tangerine-footer mdl-mini-footer">
+
+      </footer>
+      <div class="mdl-layout__obfuscator">
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="scripts.js"></script>
+    <script src="mdl/material.min.js"></script>
+  </body>
+</html>

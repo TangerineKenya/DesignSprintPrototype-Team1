@@ -1,4 +1,12 @@
 
+.tangerine-overlay {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 9999;
+  width: 100%;
+}
+
 /*
   Question Component
  */
