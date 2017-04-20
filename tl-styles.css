@@ -33,12 +33,9 @@
   */
 .tangerine--timer {
   border-right: solid #EEE 1px;
-  width: 150px;
-  height: 50px;
-  padding: 10px 0px 0 25px;
   color: #CCC;
 }
-  
+
 /*
   Header
   */
@@ -46,4 +43,8 @@
   height: 50px;
   background: white;
   width: 100%;
+}
+.tangerine-header--bar--button {
+  color: #CCC;
+  font-size: 10px;
 }
