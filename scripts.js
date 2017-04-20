@@ -1,4 +1,11 @@
+
 $('document').ready(function() {
+  setInterval(function() {
+    var time = $('.timer').text()
+    var seconds = (parseInt((time.split(':'))[2]) + 1).toString()
+    if (seconds.length == 1) seconds = '0' + seconds
+    $('.timer').text('00:00:' + seconds)
+  }, 1000)
 
   $('.mdl-button').click(function(ev) {
     $(ev.currentTarget).addClass('mdl-button--colored')
