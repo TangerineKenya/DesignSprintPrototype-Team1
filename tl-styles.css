@@ -7,6 +7,26 @@
   width: 100%;
 }
 
+.movie-player-overlay {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 999;
+  height: 100%;
+  background: black;
+  text-align: center;
+
+}
+
+.mdl-button {
+  margin: 0 10px 10px 0;
+}
+
+.mdl-button--raised.mdl-button--colored,
+.mdl-button--raised.mdl-button--colored:active {
+  background: #ef6433 !important;
+}
+
 /*
   Question Component
  */
@@ -39,7 +59,7 @@
 /*
   Timer component
   */
-.tangerine--timer {
+.timer {
   border-right: solid #EEE 1px;
   color: #CCC;
 }

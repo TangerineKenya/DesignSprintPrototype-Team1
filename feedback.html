@@ -46,6 +46,13 @@
 </head>
 
 <body>
+
+	<div style="display:none" class="movie-player-overlay tangerine-overlay">
+		<img style="position: relative;
+  top: 50%;
+  transform: translateY(-50%);" width="85%" src="assets/movie-player.png" >
+	</div>
+
 	<div class="site mdl-layout mdl-js-layout">
 
 		<div class="tangerine-header mdl-layout__header mdl-layout--fixed-header">
@@ -79,13 +86,7 @@
 		<div class="android-content mdl-layout__content">
 
 			<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-			<script>
-				$('document').ready(function () {
-					$('.mdl-button').click(function (ev) {
-						$(ev.currentTarget).addClass('mdl-button--colored')
-					})
-				})
-			</script>
+			
 			<!-- Wide card with share menu button -->
 			<style>
 
@@ -115,8 +116,8 @@
 								</ol>
 
 								<div class="mdl-card__actions mdl-card--border">
-									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-							Watch: Prediction Video with teacher Kazungu
+									<a class="open-movie-player mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+						    <img width=250 src="assets/watch-training.png">
 						</a>
 								</div>
 
@@ -299,6 +300,10 @@
 					</section>
 					<section class="mdl-layout__tab-panel" id="fixed-tab-3">
 						<div class="page-content" style="margin:15px 15px">
+							<img width=260 src="assets/feedback-lesson-duration.png">
+							<p style="margin: 10px 15px">
+								These are the moments you captured. Item you do not save will be deleted.
+							</p>
 							<img src="assets/feedback-audio.png" width="100%">
 							<img src="assets/feedback-bookmarked.png" width="100%">
 							<img src="assets/feedback-photos.png" width="100%">
