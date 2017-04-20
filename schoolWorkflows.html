@@ -30,6 +30,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="mdl/material.min.css">
   <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="https://cdn.rawgit.com/CreativeIT/getmdl-select/master/getmdl-select.min.css">
 </head>
 
 <body>
@@ -128,7 +130,7 @@
 
               </div>
 
-              </div>
+            </div>
           </section>
           <section class="mdl-layout__tab-panel tangerine-tab-content--text-pad" id="fixed-tab-2">
             <div class="page-content">
@@ -145,13 +147,111 @@
           <section class="mdl-layout__tab-panel tangerine-tab-content--text-pad" id="fixed-tab-3" disabled>
             <div class="page-content">
               <div class="tangerine-feedback--text-pad">
-                <h1>Sync</h1>
+                <div class="tangerine-card-full-width mdl-card mdl-shadow--2dp">
+                  <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--4-col">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height">
+                        <input class="mdl-textfield__input" type="text" id="sample1" value="" readonly tabIndex="-1">
+                        <label for="sample1">
+                            <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                        </label>
+                        <label for="sample1" class="mdl-textfield__label">Class</label>
+                        <ul for="sample1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                            <li class="mdl-menu__item" data-val="DE">1</li>
+                            <li class="mdl-menu__item" data-val="BY">2</li>
+                            <li class="mdl-menu__item" data-val="RU">3</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height">
+                        <input class="mdl-textfield__input" type="text" id="sample2" value="" readonly tabIndex="-1">
+                        <label for="sample2">
+                            <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                        </label>
+                        <label for="sample2" class="mdl-textfield__label">Subject</label>
+                        <ul for="sample2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                            <li class="mdl-menu__item" data-val="DE">English</li>
+                            <li class="mdl-menu__item" data-val="BY">Kiswahili</li>
+                            <li class="mdl-menu__item" data-val="RU">Math</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--4-col">
+                      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label getmdl-select getmdl-select__fix-height">
+                        <input class="mdl-textfield__input" type="text" id="sample3" value="" readonly tabIndex="-1">
+                        <label for="sample2">
+                            <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+                        </label>
+                        <label for="sample3" class="mdl-textfield__label">Stream</label>
+                        <ul for="sample3" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                            <li class="mdl-menu__item" data-val="DE">Stream 1</li>
+                            <li class="mdl-menu__item" data-val="BY">Stream 2</li>
+                            <li class="mdl-menu__item" data-val="RU">Stream 3</li>
+                        </ul>
+                      </div>
+                      
+                    </div>
+                  </div>
 
-                <p class="tangerine-card--p">This feature has not been implemented in this prototype.</p>
+                  <table class="mdl-data-table mdl-js-data-table" style="width: 100%">
+                    <thead>
+                      <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Date</th>
+                        <th class="mdl-data-table__cell--non-numeric">Class</th>
+                        <th class="mdl-data-table__cell--non-numeric">Subject</th>
+                        <th class="mdl-data-table__cell--non-numeric">Stream</th>
+                        <th class="mdl-data-table__cell--non-numeric"></th>
+                        <th class="mdl-data-table__cell--non-numeric"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th class="mdl-data-table__cell--non-numeric">April 8, 2017 12:30pm</th>
+                        <th class="mdl-data-table__cell--non-numeric">1</th>
+                        <th class="mdl-data-table__cell--non-numeric">English</th>
+                        <th class="mdl-data-table__cell--non-numeric">Stream 1</th>
+                        <th class="mdl-data-table__cell--non-numeric">
+                          <button class="mdl-button mdl-js-button mdl-button--raised">Feedback</button>
+                        </th>                        
+                        <th class="mdl-data-table__cell--non-numeric">
+                          <button class="mdl-button mdl-js-button mdl-button--raised">Notes</button>
+                        </th>
+                      </tr>
+                      <tr>
+                        <th class="mdl-data-table__cell--non-numeric">April 12, 2017 2:06pm</th>
+                        <th class="mdl-data-table__cell--non-numeric">2</th>
+                        <th class="mdl-data-table__cell--non-numeric">Kiswahili</th>
+                        <th class="mdl-data-table__cell--non-numeric">Stream 1</th>
+                        <th class="mdl-data-table__cell--non-numeric">
+                          <button class="mdl-button mdl-js-button mdl-button--raised">Feedback</button>
+                        </th>                        
+                        <th class="mdl-data-table__cell--non-numeric">
+                          <button class="mdl-button mdl-js-button mdl-button--raised">Notes</button>
+                        </th>
+                      </tr>
+                      <tr>
+                        <th class="mdl-data-table__cell--non-numeric">April 12, 2017 2:53pm</th>
+                        <th class="mdl-data-table__cell--non-numeric">2</th>
+                        <th class="mdl-data-table__cell--non-numeric">Math</th>
+                        <th class="mdl-data-table__cell--non-numeric">Stream 2</th>
+                        <th class="mdl-data-table__cell--non-numeric">
+                          <button class="mdl-button mdl-js-button mdl-button--raised">Feedback</button>
+                        </th>                        
+                        <th class="mdl-data-table__cell--non-numeric">
+                          <button class="mdl-button mdl-js-button mdl-button--raised">Notes</button>
+                        </th>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  
+
+                </div>
 
               </div>
 
-              </div>
+            </div>
           </section>
 
         </div>
@@ -169,6 +269,7 @@
     </div>
     <script src="scripts.js"></script>
     <script src="mdl/material.min.js"></script>
+    <script defer src="https://cdn.rawgit.com/CreativeIT/getmdl-select/master/getmdl-select.min.js"></script>
 </body>
 
 </html>
