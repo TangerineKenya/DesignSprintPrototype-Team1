@@ -18,6 +18,15 @@
 
 }
 
+.mdl-button {
+  margin: 0 10px 10px 0;
+}
+
+.mdl-button--raised.mdl-button--colored,
+.mdl-button--raised.mdl-button--colored:active {
+  background: #ef6433 !important;
+}
+
 /*
   Question Component
  */
