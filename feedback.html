@@ -17,226 +17,224 @@
 -->
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Android</title>
 
-    <!-- Page styles -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="mdl/material.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="tl-styles.css">
-    <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-    </style>
-  </head>
-  <body>
-    <div class="site mdl-layout mdl-js-layout">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+	<title>Android</title>
 
-      <div class="tangerine-header mdl-layout__header mdl-layout__header--waterfall">
-        <div class="mdl-layout__header-row tangerine-header-row">
-          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+	<!-- Page styles -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="mdl/material.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="tl-styles.css">
+	<link rel="stylesheet" href="feedback-styles.css">
+	<style>
+		#view-source {
+			position: fixed;
+			display: block;
+			right: 0;
+			bottom: 0;
+			margin-right: 40px;
+			margin-bottom: 40px;
+			z-index: 900;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="site mdl-layout mdl-js-layout">
+
+		<div class="tangerine-header mdl-layout__header mdl-layout--fixed-header">
+			<div class="mdl-layout__header-row tangerine-header-row">
+				<button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
             <img class="tangerine-logo-image" src="images/tangerineLogo.png" height="32px">
           </button>
-          <!-- Add spacer, to align navigation to the right in desktop -->
-          <div class="android-header-spacer mdl-layout-spacer"></div>
+				<!-- Add spacer, to align navigation to the right in desktop -->
+				<div class="android-header-spacer mdl-layout-spacer"></div>
 
-          <!-- Right aligned menu below button -->
-          <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+				<!-- Right aligned menu below button -->
+				<button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
             <i class="material-icons">more_vert</i>
           </button>
-          
-        </div>
-      </div>
+
+			</div>
+			<div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+				<a href="#fixed-tab-1" class="mdl-layout__tab is-active">Feedback</a>
+				<a href="#fixed-tab-2" class="mdl-layout__tab">Survey Data</a>
+				<a href="#fixed-tab-3" class="mdl-layout__tab">Moments</a>
+			</div>
+		</div>
 
 
-        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
-          <li class="mdl-menu__item">Home</li>
-          <li class="mdl-menu__item">Settings</li>
-          <li class="mdl-menu__item">Logout</li>
-        </ul>
+		<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+			<li class="mdl-menu__item">Home</li>
+			<li class="mdl-menu__item">Settings</li>
+			<li class="mdl-menu__item">Logout</li>
+		</ul>
 
-      <div class="android-content mdl-layout__content">
+		<div class="android-content mdl-layout__content">
 
-      <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-        <script>
-          $('document').ready(function() {
-            $('.mdl-button').click(function(ev) {
-              $(ev.currentTarget).addClass('mdl-button--colored')
-            })
-          })
-        </script>
-        <!-- Wide card with share menu button -->
-        <style>
-        </style>
+			<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+			<script>
+				$('document').ready(function () {
+					$('.mdl-button').click(function (ev) {
+						$(ev.currentTarget).addClass('mdl-button--colored')
+					})
+				})
+			</script>
+			<!-- Wide card with share menu button -->
+			<style>
 
-        <h1> Feedback </h1>
+			</style>
+			<div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
 
-        Based on your classroom observations and student assessment, the following are some of the areas the teacher needs to work on. You may focus your discussion on the top 3 items. 
-        Lesson duration: 50 minutes
+				<div class="mdl-tabs__panel is-active" id="feedback">
+					<section class="mdl-layout__tab-panel is-active" id="fixed-tab-1">
+						<div class="page-content">
+							<div class="tangerine-feedback--text-pad">
+								<h1> Feedback </h1>
+
+								<p class="tangerine-card--p">Based on your classroom observations and student assessment, the following are some of the areas the teacher needs
+									to work on. You may focus your discussion on the top 3 items. Lesson duration: 50 minutes</p>
+
+							</div>
 
 
-				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-					<div class="mdl-card__title">
-						<h2 class="mdl-card__title-text">Comprehension (Before the story)</h2>
-					</div>
-					<div class="mdl-card__supporting-text">
-							<ol>
-							  <li>Read the title.</li> 
-								<li>Discuss the picture.</li> 
-								<li>Ask the pupils to make a prediction</li>
-								<li>Check to see if the pupil's prediction was correct after they read the story.</li> 
- 							</ol>
-					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+
+								<h4 class="tangerine-feedback-title">Comprehension (Before the story)</h4>
+								<ol>
+									<li>Read the title.</li>
+									<li>Discuss the picture.</li>
+									<li>Ask the pupils to make a prediction</li>
+									<li>Check to see if the pupil's prediction was correct after they read the story.</li>
+								</ol>
+
+								<div class="mdl-card__actions mdl-card--border">
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
 							Watch: Prediction Video with teacher Kazungu
 						</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
-					</div>
-				</div>
+								</div>
 
-				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-					<div class="mdl-card__title">
-						<h2 class="mdl-card__title-text">
-							Homework
-						</h2>
-					</div>
-					<div class="mdl-card__supporting-text">
-						Demonstrate how to do the homework with the classwork examples.
-					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+							</div>
+
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+
+								<h4 class="tangerine-feedback-title">Homework</h4>
+								<p class="tangerine-feedback-title">Demonstrate how to do the homework with the classwork examples.</p>
+
+								<div class="mdl-card__actions mdl-card--border">
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
 							Get Started
 						</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
-					</div>
-				</div>
+								</div>
 
-				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-					<div class="mdl-card__title">
-						<h2 class="mdl-card__title-text">
-							Perky Pace
-						</h2>
-					</div>
-					<div class="mdl-card__supporting-text">
-						Remember to review your lesson before you give it. You can review by practicing it, review parts that you are unsure about, and timing yourself as you practice.
-					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-							Foo
+							</div>
+
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+
+								<h4 class="tangerine-feedback-title">Perky Pace</h4>
+								<p class="tangerine-feedback-title">Remember to review your lesson before you give it. You can review by practicing it, review parts that you are unsure
+									about, and timing yourself as you practice.</p>
+
+								<div class="mdl-card__actions mdl-card--border">
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+							Get Started
 						</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
-					</div>
-				</div>
+								</div>
 
-				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-					<div class="mdl-card__title">
-						<h2 class="mdl-card__title-text">
-							Staying on Pace
-						</h2>
-					</div>
-					<div class="mdl-card__supporting-text">
-						It is important to teach Tusome lessons every day. If you fall behind in your Tusome lessons, your children will not be able to read or perform well on exams. If you are falling behind, teach two Tusome lessons on one day to catch up.
-					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
- 						  Foo
+							</div>
+
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+
+								<h4 class="tangerine-feedback-title">Staying on Pace</h4>
+								<p class="tangerine-feedback-title">It is important to teach Tusome lessons every day. If you fall behind in your Tusome lessons, your children will
+									not be able to read or perform well on exams. If you are falling behind, teach two Tusome lessons on one day to
+									catch up.
+								</p>
+
+								<div class="mdl-card__actions mdl-card--border">
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+							Get Started
 						</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
-					</div>
-				</div>
+								</div>
 
+							</div>
 
-				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-					<div class="mdl-card__title">
-						<h2 class="mdl-card__title-text">
-							Student Assessment Results
-						</h2>
-					</div>
-					<div class="mdl-card__supporting-text">
-						<p>
-							The students that were assessed in this class achieved on average 623 correct items per minute.
-						</p>
-						<p>
-							<ol>
-								<li>For Kiswahili, the end of grade benchmark is 17 correct items per minute in Class 1 and 45 correct items per minute in Class 2.</li>
-							  <li>For English, the end of grade benchmark is 30 correct items per minute in Class 1 and 65 correct items per minute in Class 2.</li>
-							</ol>
-            </p>
-						<p>
-							Use this information in your discussions with the teacher.
-            </p>
-					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-						  Foo
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+
+								<h4 class="tangerine-feedback-title">Student Assessment Results</h4>
+								<p class="tangerine-feedback-title">The students that were assessed in this class achieved on average 623 correct items per minute.</p>
+								<ol>
+									<li class="tangerine-feedback-title">For Kiswahili, the end of grade benchmark is 17 correct items per minute in Class 1 and 45 correct items per minute
+										in Class 2.</li>
+									<li class="tangerine-feedback-title">For English, the end of grade benchmark is 30 correct items per minute in Class 1 and 65 correct items per minute
+										in Class 2.</li>
+								</ol>
+								<p class="tangerine-feedback-title">
+									Use this information in your discussions with the teacher.
+								</p>
+								<div class="mdl-card__actions mdl-card--border">
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+							Get Started
 						</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
-					</div>
-				</div>
+								</div>
 
-				<div class="demo-card-wide mdl-card mdl-shadow--2dp">
-					<div class="mdl-card__title">
-						<h2 class="mdl-card__title-text">
-							TAC/Coach Notes
-						</h2>
-					</div>
-					<div class="mdl-card__supporting-text">
-            How did the feedback session go? What do you hope the teacher will change for next time?
-					</div>
-					<div class="mdl-card__actions mdl-card--border">
-						<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-						  Foo
+							</div>
+
+
+							<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+
+								<h4 class="tangerine-feedback-title">TAC/Coach Notes</h4>
+								<p class="tangerine-feedback-title">How did the feedback session go? What do you hope the teacher will change for next time?</p>
+
+								<div class="mdl-card__actions mdl-card--border">
+									<a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+							Get Started
 						</a>
-					</div>
-					<div class="mdl-card__menu">
-						<button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-							<i class="material-icons">share</i>
-						</button>
-					</div>
+								</div>
+
+							</div>
+						</div>
+					</section>
+					<section class="mdl-layout__tab-panel" id="fixed-tab-2">
+						<div class="page-content">
+							<ul>
+								<li>Tywin</li>
+								<li>Cersei</li>
+								<li>Jamie</li>
+								<li>Tyrion</li>
+							</ul>
+						</div>
+					</section>
+					<section class="mdl-layout__tab-panel" id="fixed-tab-3">
+						<div class="page-content">
+							<ul>
+								<li>Viserys</li>
+								<li>Daenerys</li>
+							</ul>
+						</div>
+					</section>
+
 				</div>
 
-        
-      </div>
-      <footer class="tangerine-footer mdl-mini-footer">
-            
-      </footer>
-      <div class="mdl-layout__obfuscator">
-    </div>
-    <script src="scripts.js"></script>
-    <script src="mdl/material.min.js"></script>
-  </body>
+			</div>
+
+
+
+
+		</div>
+		<footer class="tangerine-footer mdl-mini-footer">
+
+		</footer>
+		<div class="mdl-layout__obfuscator">
+		</div>
+		<script src="scripts.js"></script>
+		<script src="mdl/material.min.js"></script>
+</body>
+
 </html>

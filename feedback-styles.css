@@ -1,0 +1,38 @@
+html, body{
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+}
+.tangerine-feedback--text-pad{
+    padding-left: 25px;
+    padding-right: 4.7rem;
+    text-align: justify;
+}
+
+.tangerine-feedback-title{
+    padding-left: 20px;
+    text-align: justify;
+    padding-right: 4rem;
+}
+
+.mdl-button.mdl-button--colored {
+    color: #EF6433;
+}
+
+.mdl-button{
+    text-transform: none;
+}
+
+.mdl-tabs.is-upgraded .mdl-tabs__tab.is-active {
+    color: #EF6433;
+}
+.mdl-tabs__tab{
+    color: #EF6433;
+}
+
+.mdl-layout__tab-bar-button, .mdl-layout__tab-bar{
+    background-color: #fff;
+    /*color: #EF6433;*/
+}
+
+.mdl-layout.is-upgraded .mdl-layout__tab.is-active, .mdl-layout__tab{
+    color: #EF6433;
+}
