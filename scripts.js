@@ -8,7 +8,7 @@ $('document').ready(function() {
   }, 1000)
 
   $('.mdl-button').click(function(ev) {
-    $(ev.currentTarget).addClass('mdl-button--colored')
+    $(this).toggleClass('mdl-button--colored')
   })
 
   $('.audio-button').click(function(ev) {
