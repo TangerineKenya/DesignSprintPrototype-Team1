@@ -17,74 +17,236 @@
 -->
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="descriptiosdfsdn" content="Introducing Lollipop, a sweet new take on Android.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Android</title>
 
-    <!-- Page styles -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="mdl/material.min.css">
-    <link rel="stylesheet" href="mdl/material.min.css">
-    <link rel="stylesheet" href="mdl/material.min.css">
-    <link rel="stylesheet" href="mdl/material.min.css">
-    <link rel="stylesheet" href="mdl/material.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-    #view-source {
-      position: fixed;
-      display: block;
-      right: 0;
-      bottom: 0;
-      margin-right: 40px;
-      margin-bottom: 40px;
-      z-index: 900;
-    }
-    </style>
-  </head>
-  <body>
-    <div class="site mdl-layout mdl-js-layout">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Android</title>
 
-      <div class="tangerine-header mdl-layout__header mdl-layout__header--waterfall">
-        <div class="mdl-layout__header-row tangerine-header-row">
-        <div class="mdl-layout__header-row tangerine-header-row">
-        <div class="mdl-layout__header-row tangerine-header-row">
-          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <img class="tangerine-logo-image" src="images/tangerineLogo.png" height="32px">
-          </button>
-          <!-- Add spacer, to align navigation to the right in desktop -->
-          <div class="android-header-spacer mdl-layout-spacer"></div>
+  <!-- Page styles -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="mdl/material.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
 
-          <!-- Right aligned menu below button -->
-          <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+<body>
+  <div class="site mdl-layout mdl-js-layout">
+
+    <div class="tangerine-header mdl-layout__header mdl-layout--fixed-header">
+      <div class="mdl-layout__header-row tangerine-header-row">
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+          <img class="tangerine-logo-image" src="images/tangerineLogo.png" height="32px">
+        </button>
+        <span class="tangerine-page-title">My Schools</span>
+        <!-- Add spacer, to align navigation to the right in desktop -->
+        <div class="android-header-spacer mdl-layout-spacer"></div>
+
+        <!-- Right aligned menu below button -->
+        <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
             <i class="material-icons">more_vert</i>
           </button>
-          
+
+      </div>
+      <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+        <a href="#fixed-tab-1" class="mdl-layout__tab is-active">My Schools</a>
+        <a href="#fixed-tab-2" class="mdl-layout__tab">Monthly Report</a>
+        <a href="#fixed-tab-3" class="mdl-layout__tab" disabled>Sync</a>
+      </div>
+    </div>
+
+
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+      <li class="mdl-menu__item">Home</li>
+      <li class="mdl-menu__item">Settings</li>
+      <li class="mdl-menu__item">Logout</li>
+    </ul>
+
+    <div class="android-content mdl-layout__content">
+
+      
+      <style>
+
+      </style>
+      <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+
+        <div class="mdl-tabs__panel is-active" id="feedback">
+          <section class="mdl-layout__tab-panel is-active tangerine-tab-content--text-pad" id="fixed-tab-1">
+            <div class="page-content">
+              <div class="tangerine-feedback--text-pad">
+                
+                <div class="tangerine-card-full-width mdl-card mdl-shadow--2dp">
+
+                  <img src="images/search-input.png" width="200px" id="search-input" />
+
+                  <ul class="tangerine-school-list mdl-list">
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content tangerine-list-header">
+                        Schools in Chapchap
+                      </span>
+                      <span class="mdl-list__item-secondary-action tangerine-list-header">
+                        Visits
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <a href="schoolWorkflows.html" class="mdl-button mdl-button--icon"><i class="material-icons mdl-list__item-open_in_new">open_in_new</i></a>
+                        <span class="tangerine-school-name">Kabarbarma</span>
+                      </span>
+                      <span class="mdl-list__item-secondary-action">
+                        0
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <a href="schoolWorkflows.html" class="mdl-button mdl-button--icon"><i class="material-icons mdl-list__item-open_in_new">open_in_new</i></a>
+                        <span class="tangerine-school-name">Kabochony</span>
+                      </span>
+                      <span class="mdl-list__item-secondary-action">
+                        0
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <a href="schoolWorkflows.html" class="mdl-button mdl-button--icon"><i class="material-icons mdl-list__item-open_in_new">open_in_new</i></a>
+                        <span class="tangerine-school-name">Kapkomoi</span>
+                      </span>
+                      <span class="mdl-list__item-secondary-action">
+                        0
+                      </span>
+                    </li>
+                  </ul>
+
+                  <ul class="tangerine-school-list mdl-list">
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content tangerine-list-header">
+                        Schools Visited this Month
+                      </span>
+                      <span class="mdl-list__item-secondary-action tangerine-list-header">
+                        Visits
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <a href="schoolWorkflows.html" class="mdl-button mdl-button--icon"><i class="material-icons mdl-list__item-open_in_new">open_in_new</i></a>
+                        <span class="tangerine-school-name">Kapngelel</span>
+                      </span>
+                      <span class="mdl-list__item-secondary-action">
+                        1
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <a href="schoolWorkflows.html" class="mdl-button mdl-button--icon"><i class="material-icons mdl-list__item-open_in_new">open_in_new</i></a>
+                        <span class="tangerine-school-name">Kaptorokwo</span>
+                      </span>
+                      <span class="mdl-list__item-secondary-action">
+                        2
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <a href="schoolWorkflows.html" class="mdl-button mdl-button--icon"><i class="material-icons mdl-list__item-open_in_new">open_in_new</i></a>
+                        <span class="tangerine-school-name">Kasore</span>
+                      </span>
+                      <span class="mdl-list__item-secondary-action">
+                        4
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <a href="schoolWorkflows.html" class="mdl-button mdl-button--icon"><i class="material-icons mdl-list__item-open_in_new">open_in_new</i></a>
+                        <span class="tangerine-school-name">Kipkaech B D</span>
+                      </span>
+                      <span class="mdl-list__item-secondary-action">
+                        2
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <a href="schoolWorkflows.html" class="mdl-button mdl-button--icon"><i class="material-icons mdl-list__item-open_in_new">open_in_new</i></a>
+                        <span class="tangerine-school-name">Kitumbei</span>
+                      </span>
+                      <span class="mdl-list__item-secondary-action">
+                        1
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <a href="schoolWorkflows.html" class="mdl-button mdl-button--icon"><i class="material-icons mdl-list__item-open_in_new">open_in_new</i></a>
+                        <span class="tangerine-school-name">Kituro</span>
+                      </span>
+                      <span class="mdl-list__item-secondary-action">
+                        4
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <a href="schoolWorkflows.html" class="mdl-button mdl-button--icon"><i class="material-icons mdl-list__item-open_in_new">open_in_new</i></a>
+                        <span class="tangerine-school-name">Ngetmoi</span>
+                      </span>
+                      <span class="mdl-list__item-secondary-action">
+                        1
+                      </span>
+                    </li>
+                    <li class="mdl-list__item">
+                      <span class="mdl-list__item-primary-content">
+                        <a href="schoolWorkflows.html" class="mdl-button mdl-button--icon"><i class="material-icons mdl-list__item-open_in_new">open_in_new</i></a>
+                        <span class="tangerine-school-name">Sesya</span>
+                      </span>
+                      <span class="mdl-list__item-secondary-action">
+                        2
+                      </span>
+                    </li>
+                  </ul>
+
+                </div>
+
+              </div>
+
+              </div>
+          </section>
+          <section class="mdl-layout__tab-panel tangerine-tab-content--text-pad" id="fixed-tab-2">
+            <div class="page-content">
+              <div class="tangerine-feedback--text-pad">
+
+                <div>
+                  <img src="images/monthly-report.png" width="100%">
+                </div>
+
+              </div>
+
+              </div>
+          </section>
+          <section class="mdl-layout__tab-panel tangerine-tab-content--text-pad" id="fixed-tab-3" disabled>
+            <div class="page-content">
+              <div class="tangerine-feedback--text-pad">
+                <h1>Sync</h1>
+
+                <p class="tangerine-card--p">This feature has not been implemented in this prototype.</p>
+
+              </div>
+
+              </div>
+          </section>
+
         </div>
+
       </div>
 
 
-        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
-          <li class="mdl-menu__item">Home</li>
-          <li class="mdl-menu__item">Settings</li>
-          <li class="mdl-menu__item">Logout</li>
-        </ul>
 
-      <div class="android-content mdl-layout__content">
-        
-        <p>hello world</p>
 
-        
-      </div>
-      <footer class="tangerine-footer mdl-mini-footer">
-            
-      </footer>
-      <div class="mdl-layout__obfuscator">
+    </div>
+    <footer class="tangerine-footer mdl-mini-footer">
+
+    </footer>
+    <div class="mdl-layout__obfuscator">
     </div>
     <script src="scripts.js"></script>
     <script src="mdl/material.min.js"></script>
-  </body>
+</body>
+
 </html>
