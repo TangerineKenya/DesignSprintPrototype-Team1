@@ -30,4 +30,12 @@ $('document').ready(function() {
   $('.bookmark-button').click(function(ev) {
     alert('You have marked this time')
   })
+
+  $('.open-movie-player').click(function(ev) {
+    $('.movie-player-overlay').show()
+  })
+  $('.movie-player-overlay').click(function(ev) {
+    $('.movie-player-overlay').hide()
+  })
+
 })

@@ -7,6 +7,17 @@
   width: 100%;
 }
 
+.movie-player-overlay {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 999;
+  height: 100%;
+  background: black;
+  text-align: center;
+
+}
+
 /*
   Question Component
  */
