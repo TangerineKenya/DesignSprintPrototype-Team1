@@ -12,7 +12,27 @@ body {
   padding-left: 10px;
 }
 
+.tangerine-page-title {
+  padding-left: 20px;
+}
+
 .tangerine-footer {
   background-color: #2b2b2b;
 }
 
+.tangerine-school-list li {
+  border-bottom: 1px solid rgba(0,0,0,.12)
+}
+
+.tangerine-list-header {
+  font-weight: bold;
+  color: #EF6433;
+}
+
+.tangerine-school-name {
+  padding-left: 10px;
+}
+
+.tangerine-tab-bar {
+  justify-content: left;
+}
