@@ -1,0 +1,231 @@
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Android</title>
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="mdl/material.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="tl-styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="site mdl-layout mdl-js-layout">
+
+      <div class="tangerine-header mdl-layout__header mdl-layout__header--waterfall">
+
+        <div class="mdl-layout__header-row tangerine-header-row">
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+            <img class="tangerine-logo-image" src="images/tangerineLogo.png" height="32px">
+          </button>
+          <!-- Add spacer, to align navigation to the right in desktop -->
+          <div class="android-header-spacer mdl-layout-spacer"></div>
+
+          <!-- Right aligned menu below button -->
+          <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+            <i class="material-icons">more_vert</i>
+          </button>
+          
+        </div>
+        <div class="tangerine-header--bar">
+          <div class="tangerine--timer">
+            <img src="assets/ic_clock.png"> 00:45:23  
+          </div>
+          <div class="tangerine--bar-buttons">
+            <img src="assets/ic_mic.png">  
+            <img src="assets/ic_camera.png">  
+            <img src="assets/ic_video.png">  
+            <img src="assets/ic_bookmark.png">  
+        </div>
+
+
+      </div>
+
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="demo-menu-lower-right">
+          <li class="mdl-menu__item">Home</li>
+          <li class="mdl-menu__item">Settings</li>
+          <li class="mdl-menu__item">Logout</li>
+        </ul>
+
+      <div class="android-content mdl-layout__content">
+
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script>
+          $('document').ready(function() {
+            $('.mdl-button').click(function(ev) {
+              $(ev.currentTarget).addClass('mdl-button--colored')
+            })
+          })
+        </script>
+        <!-- Wide card with share menu button -->
+        <style>
+        </style>
+
+
+
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__supporting-text">
+            <h5>Did the teacher teach the song?</h5>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Yes </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> No </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Not Applicable </button>
+          </div>
+        </div>
+
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__supporting-text">
+            <h5>What Phonemic Awareness activities were modeled?</h5>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Thumbs up/Thumbs down </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Blending </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Segmenting </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Not applicable </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> This section was skipped </button>
+          </div>
+        </div>
+
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__supporting-text">
+            <h5>What Vocabulary strategies were modeled?</h5>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Gesture </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Make a sentence </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Give definition </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Point to something </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Use a picture </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Give another word in English/MT or Kiswahili</button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Not applicable </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> This section was skipped </button>
+          </div>
+        </div>
+
+
+
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__supporting-text">
+            <h5>Did the teacher define the word correctly?</h5>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Yes </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> No </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Not Applicable </button>
+          </div>
+        </div>
+
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__supporting-text">
+            <h5>Did the teacher support the children to make sentences with the words?</h5>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Yes </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> No </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Not Applicable </button>
+          </div>
+        </div>
+
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__supporting-text">
+            <h5>Was there any grammar activity in the lesson?</h5>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Yes </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> No </button>
+          </div>
+        </div>
+
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__supporting-text">
+            <h5>What Comprehension (before the story) activities were modeled?</h5>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Read title </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Talk about picture(s) </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Prediction </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> This section was skipped </button>
+          </div>
+        </div>
+
+
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__supporting-text">
+            <h5>Read-Aloud: Who read the story?</h5>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Teacher  </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Whole class (echo/coral) </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> This section was skipped </button>
+          </div>
+        </div>
+
+
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__supporting-text">
+            <h5>What Comprehension (after reading story) activities were modeled?</h5>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Checked prediction  </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Asked questions from the script </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Asked pupils to retell story </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> Skipped this section </button>
+          </div>
+        </div>
+
+
+        <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__supporting-text">
+            <h5>Did the teacher use the I do/We do/you do throughout?</h5>
+          </div>
+          <div class="mdl-card__supporting-text">
+            <button class="mdl-button mdl-js-button mdl-button--raised"> yes  </button>
+            <button class="mdl-button mdl-js-button mdl-button--raised"> no </button>
+          </div>
+        </div>
+
+        
+      </div>
+      <footer class="tangerine-footer mdl-mini-footer">
+            
+      </footer>
+      <div class="mdl-layout__obfuscator">
+    </div>
+    <script src="scripts.js"></script>
+    <script src="mdl/material.min.js"></script>
+  </body>
+</html>
