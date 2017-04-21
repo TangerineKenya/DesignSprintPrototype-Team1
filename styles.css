@@ -13,6 +13,20 @@ body {
 }
 
 .tangerine-page-title {
+  font-size: 19px;
+}
+
+.tangerine-page-title a, .tangerine-page-title a:hover {
+  color: #F8F185; 
+  text-decoration: none
+}
+
+.mdl-menu__item a, .mdl-menu__item a:hover {
+  color:rgba(0,0,0,.87);
+  text-decoration: none;
+}
+
+.tangerine-page-title {
   padding-left: 20px;
 }
 
