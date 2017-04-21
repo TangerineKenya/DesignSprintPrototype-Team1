@@ -17,20 +17,21 @@
 -->
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>Android</title>
 
-    <!-- Page styles -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="mdl/material.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="tl-styles.css">
-    <style>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Introducing Lollipop, a sweet new take on Android.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Android</title>
+
+  <!-- Page styles -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="mdl/material.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="tl-styles.css">
+  <style>
     #view-source {
       position: fixed;
       display: block;
@@ -40,114 +41,111 @@
       margin-bottom: 40px;
       z-index: 900;
     }
-    </style>
-  </head>
-  <body>
+  </style>
+</head>
 
-    <!---
+<body>
+
+  <!---
       --
       OVERLAYS
       --
     -->
 
-    <div style="display:none" class="audio-overlay tangerine-overlay">
-      <img width="100%" src="assets/audio.png" >
-    </div>
+  <div style="display:none" class="audio-overlay tangerine-overlay">
+    <img width="100%" src="assets/audio.png">
+  </div>
 
-    <div style="display:none" class="camera-overlay tangerine-overlay">
-      <img width="100%" src="assets/camera.jpg" >
-    </div>
+  <div style="display:none" class="camera-overlay tangerine-overlay">
+    <img width="100%" src="assets/camera.jpg">
+  </div>
 
-    <div style="display:none" class="video-overlay tangerine-overlay">
-      <img width="100%" src="assets/camera.jpg" >
-    </div>
+  <div style="display:none" class="video-overlay tangerine-overlay">
+    <img width="100%" src="assets/camera.jpg">
+  </div>
 
-    <div style="display:none" class="bookmark-overlay tangerine-overlay">
-      <img width="100%" src="assets/bookmark.jpg" >
-    </div>
-
-
+  <div style="display:none" class="bookmark-overlay tangerine-overlay">
+    <img width="100%" src="assets/bookmark.jpg">
+  </div>
 
 
-    <!---
+
+
+  <!---
       --
       Layout
       --
     -->
 
-    <div class="site mdl-layout mdl-js-layout">
+  <div class="site mdl-layout mdl-js-layout">
 
-      <!---
+    <!---
         --
         Header
         --
       -->
 
-      <div class="tangerine-header mdl-layout__header">
+    <div class="tangerine-header mdl-layout__header">
 
-        <div class="mdl-layout__header-row tangerine-header-row">
-          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-            <img class="tangerine-logo-image" src="images/tangerineLogo.png" height="32px">
-          </button>
-          <!-- Add spacer, to align navigation to the right in desktop -->
-          <div class="android-header-spacer mdl-layout-spacer"></div>
+      <div class="mdl-layout__header-row tangerine-header-row">
+        <a href="http://127.0.0.1:8080/" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+          <img class="tangerine-logo-image" src="images/tangerineLogo.png" height="32px">
+        </a>
+        <!-- Add spacer, to align navigation to the right in desktop -->
+        <div class="android-header-spacer mdl-layout-spacer"></div>
 
-          <!-- Right aligned menu below button -->
-          <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
+        <!-- Right aligned menu below button -->
+        <button id="demo-menu-lower-right" class="mdl-button mdl-js-button mdl-button--icon">
             <i class="material-icons">more_vert</i>
           </button>
-        </div>
+      </div>
 
-        <div class="tangerine-header--bar">
+      <div class="tangerine-header--bar">
 
-          <div class="mdl-grid">
+        <div class="mdl-grid">
 
-            <div class="mdl-cell mdl-cell--1-col">
-              <img style="float:right" src="assets/ic_clock.png">
-            </div>
+          <div class="mdl-cell mdl-cell--1-col">
+            <img style="float:right" src="assets/ic_clock.png">
+          </div>
 
-            <div class="mdl-cell mdl-cell--2-col timer">
-              00:00:00
-            </div>
+          <div class="mdl-cell mdl-cell--2-col timer">
+            00:00:00
+          </div>
 
 
-            <div class="mdl-cell mdl-cell--1-col">
-            </div>
+          <div class="mdl-cell mdl-cell--1-col">
+          </div>
 
-            <div class="mdl-cell mdl-cell--1-col tangerine-header--bar--button audio-button">
-                <img src="assets/ic_mic.png">
-                Audio
-            </div>
+          <div class="mdl-cell mdl-cell--1-col tangerine-header--bar--button audio-button">
+            <img src="assets/ic_mic.png"> Audio
+          </div>
 
-            <div class="mdl-cell mdl-cell--1-col tangerine-header--bar--button camera-button">
-              <img src="assets/ic_camera.png">
-              Photo
-            </div>
+          <div class="mdl-cell mdl-cell--1-col tangerine-header--bar--button camera-button">
+            <img src="assets/ic_camera.png"> Photo
+          </div>
 
-            <div class="mdl-cell mdl-cell--1-col tangerine-header--bar--button video-button">
-              <img src="assets/ic_video.png">
-              Video
-            </div>
+          <div class="mdl-cell mdl-cell--1-col tangerine-header--bar--button video-button">
+            <img src="assets/ic_video.png"> Video
+          </div>
 
-            <div class="mdl-cell mdl-cell--1-col tangerine-header--bar--button bookmark-button">
-              <img src="assets/ic_bookmark.png">
-              Mark
-            </div>
-
+          <div class="mdl-cell mdl-cell--1-col tangerine-header--bar--button bookmark-button">
+            <img src="assets/ic_bookmark.png"> Mark
           </div>
 
         </div>
 
       </div>
 
-      <div class="android-content mdl-layout__content">
-        <div class="lesson-content-wrapper" style="margin: auto">
+    </div>
+
+    <div class="android-content mdl-layout__content">
+      <div class="lesson-content-wrapper" style="margin: auto">
 
         <!-- Wide card with share menu button -->
         <style>
-        .demo-card-wide.mdl-card {
-          margin: 20px auto;
-        }
+          .demo-card-wide.mdl-card {
+            margin: 20px auto;
+          }
         </style>
 
 
@@ -285,5 +283,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="scripts.js"></script>
     <script src="mdl/material.min.js"></script>
-  </body>
+</body>
+
 </html>
