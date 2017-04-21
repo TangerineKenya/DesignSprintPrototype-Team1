@@ -6,6 +6,15 @@ $('document').ready(function () {
     if (seconds.length == 1) seconds = '0' + seconds
     $('.timer').text('00:00:' + seconds)
   }, 1000)
+  setInterval(function () {
+    var time = $('.countdown-timer').text()
+    var seconds = (parseInt((time.split(':'))[2]) - 1).toString()
+    if (seconds !== 0) {
+      if (seconds.length == 1) seconds = '0' + seconds
+      //debugger
+      $('.countdown-timer').text('00:00:' + seconds)
+    }
+  }, 1000)
 
   $('.mdl-button').click(function (ev) {
     $(this).toggleClass('mdl-button--colored')
