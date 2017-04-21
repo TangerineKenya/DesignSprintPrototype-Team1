@@ -14,6 +14,10 @@ $('document').ready(function () {
       //debugger
       $('.countdown-timer').text('00:00:' + seconds)
     }
+    if (seconds == '0') {
+      $('.countdown-timer').text('Time is up!')
+    }
+
   }, 1000)
 
   $('.mdl-button').click(function (ev) {
