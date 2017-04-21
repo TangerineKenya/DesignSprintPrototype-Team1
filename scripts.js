@@ -9,12 +9,12 @@ $('document').ready(function () {
   setInterval(function () {
     var time = $('.countdown-timer').text()
     var seconds = (parseInt((time.split(':'))[2]) - 1).toString()
-    if (seconds !== '0') {
+    if (seconds !== '0' || seconds !== 'NaN' || seconds.substr(0, 1) !== '-' ) {
       if (seconds.length == 1) seconds = '0' + seconds
       //debugger
       $('.countdown-timer').text('00:00:' + seconds)
     }
-    if (seconds == '0') {
+    if (seconds == '0' || seconds.substr(0, 1) == '-' || seconds == 'NaN') {
       $('.countdown-timer').text('Time is up!')
     }
 
