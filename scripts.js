@@ -35,7 +35,8 @@ $('document').ready(function () {
   })
 
   $('.bookmark-button').click(function (ev) {
-    alert('You have marked this time')
+    // alert('You have marked this time')
+    var x = confirm("Enter a   note");
   })
 
   $('.open-movie-player').click(function (ev) {
